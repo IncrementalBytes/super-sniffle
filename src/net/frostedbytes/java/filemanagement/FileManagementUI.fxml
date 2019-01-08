@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="mainPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.frostedbytes.java.filemanagement.FileManagementUIController">
+   <children>
+        <Pane prefHeight="95.0" prefWidth="600.0">
+            <children>
+                <Label fx:id="sourceLabel" layoutX="14.0" layoutY="21.0" text="Source Path:" />
+                <TextField fx:id="sourceText" layoutX="128.0" layoutY="17.0" prefHeight="25.0" prefWidth="398.0" />
+                <Button fx:id="sourceButton" disable="true" layoutX="539.0" layoutY="17.0" mnemonicParsing="false" text="..." />
+                <Label fx:id="destinationLabel" layoutX="14.0" layoutY="58.0" text="Destination Path:" />
+                <TextField fx:id="destinationText" layoutX="127.0" layoutY="54.0" prefHeight="25.0" prefWidth="398.0" />
+                <Button fx:id="destinationButton" disable="true" layoutX="539.0" layoutY="54.0" mnemonicParsing="false" text="..." />
+            </children>
+        </Pane>
+        <Pane layoutX="3.0" layoutY="103.0" prefHeight="65.0" prefWidth="594.0">
+            <children>
+                <Label fx:id="patternLabel" layoutX="14.0" layoutY="22.0" text="Name Pattern:" />
+                <TextField fx:id="patternText" layoutX="130.0" layoutY="18.0" prefHeight="25.0" prefWidth="398.0" />
+            </children>
+        </Pane>
+        <Pane layoutX="3.0" layoutY="336.0" prefHeight="50.0" prefWidth="594.0">
+            <children>
+                <Button fx:id="renameButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#renameButtonOnAction" text="Rename" />
+                <Button fx:id="exitButton" layoutX="545.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitButtonOnAction" text="Exit" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
